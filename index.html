@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TriNova</title>
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="main">
+                <div class="logo">
+                    <img src="images/logago.png" style="width: 100px" />
+                </div>
+
+                <ul>
+                    <li class="HomeQ"><a href="index.html">Home</a></li>
+                    <li class="FFQ"><a href="trinova.html">TriNova</a></li>
+                    <li class="AboutQ"><a href="aboutus.html">About Us</a></li>
+                    <li class="MissionQ"><a href="research.html">Research</a></li>
+                    <li class="QuarterQ"><a href="ourteam.html">Our Team</a></li>
+                </ul>
+            </div>
+            <div class="title">
+                <h1 class="glow-title" style="font-size: 120px;">TRINOVA</h1>
+            </div>
+            <div class="button">
+                <p class="glow-tagline">"Powered by Environment."</p> 
+            </div>
+        </header>
+
+        <p class="Divider">.</p>
+        <section class="PageOne" id="PageOne">
+            <div class="Container1">
+                <h1>About TriNova</h1>
+                <p>Trinova represents the three core pillars influencing student learning: Home, School, and Students’ Well-being. “Tri” symbolizes these three factors, while “Nova” stands for new insights, strategies, and support for learners.</p>
+            </div>
+            <div class="Container2">
+                <h1>Our Goal</h1>
+                <p>Trinova aims to bridge research and real-life application. By understanding how parenting styles, household responsibilities, emotional support, and study environments affect Grade 7 and Grade 12 learners at APEC Schools Marikina Heights, Trinova provides practical guidance for students, parents, and educators to help improve academic outcomes.</p>
+            </div>
+        </section>
+
+
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="gsap-member/minified/gsap.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>    
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+        entry.target.classList.add('show1');
+    } else {
+        entry.target.classList.remove('show1');
+    }
+    });
+    });
+        
+    const hiddenElements = document.querySelectorAll('.Container1');
+    hiddenElements.forEach((el) => observer.observe(el));
+        document.addEventListener("DOMContentLoaded", (event) => {
+         gsap.registerPlugin(ScrollTrigger)
+    });
+
+    gsap.to('.Container2', {
+        x: -250, 
+        scrollTrigger: {
+            trigger: '.PageOne',
+            scrub: true,
+    }
+    })
+    gsap.to('.Container1', {
+        x: 250, 
+        scrollTrigger: {
+            trigger: '.PageOne',
+            scrub: true,
+    }
+    })
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,218 @@
+@font-face {
+    font-family: Airlash;
+    src: url(Airlash\ Raiders.ttf);
+}
+
+@font-face {
+    font-family: Golden;
+    src: url(Hunters\ K-Pop.otf);
+}
+
+@font-face {
+    font-family: CreatoMedium;
+    src: url(CreatoDisplay-Medium.otf);
+}
+
+@font-face {
+    font-family: CreatoMediumItalic;
+    src: url(CreatoDisplay-MediumItalic.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: CreatoMedium;
+}
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(https://starquality.shop/cdn/shop/files/av0ar8_2.gif?v=1677164784);
+    height: 10vh;
+    background-position: center;
+    background-size: cover;
+}
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-right: 60px;
+}
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    transition: 1s ease;
+    font-family: CreatoMediumItalic;
+}
+
+.HomeQ a:hover {
+    background-image: linear-gradient(#c09adb, #ffffff);
+    color: #431579;
+    border-radius: 10px;
+}
+.FFQ a:hover {
+    background-image: linear-gradient(#a17bb9, #ffffff);
+    color: #8132c2;
+    border-radius: 10px;
+}
+
+.AboutQ a:hover {
+    background-image: linear-gradient(#825b97, #ffffff);
+    color: #7d2dc7;
+    border-radius: 10px;
+}
+
+.MissionQ a:hover {
+    background-image: linear-gradient(#623c74, #ffffff);
+    color: #431579;
+    border-radius: 10px;
+}
+
+.QuarterQ a:hover {
+    background-image: linear-gradient(#431c52, #fff);
+    color: #431579;
+    border-radius: 10px;
+}
+
+.logo img {
+    float: left;
+    width: 150px;
+    height: auto;
+}
+
+.main {
+    padding-top: 10px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.Divider {
+    line-height: 2px;
+    background-color: #350757;
+}
+
+
+
+.PageOne {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(https://4kwallpapers.com/images/wallpapers/dark-purple-3440x1440-17330.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 1vh;
+    overflow-x: hidden;
+
+}
+
+.account-block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.account-logo {
+    width: 500px;
+    height: auto;
+    flex-shrink: 0;
+    
+}
+
+.account-info h2 {
+    margin: 0;
+    font-size: 100px;
+    color: #fff;
+    font-family: CreatoMedium;
+}
+
+.account-info p {
+    margin: 5px 0 10px;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.account-link {
+    color: #d9c1ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.account-link:hover {
+    text-decoration: underline;
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.account-logo {
+    animation: slideInLeft 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+
+.account-info {
+    animation: slideInRight 1.2s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.2s;
+}
+
+.PageThree p {
+    padding: 2vh;
+    border-radius: 10px;
+    background-image: linear-gradient(gray, rgb(94, 94, 94));
+    color: #000;
+    margin-bottom: 2vh;
+    margin-left: 2vh;
+}
+
+.PageThree {
+    background-color: #ffffff;
+    display: flex;
+    gap: 2em;
+    width: 100%;
+    font-size: 22px;
+    justify-content: center;
+}
+.PageThree .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 1000px;
+    justify-content: center;
+}
+
+.PageThreeText {
+    box-sizing: border-box;
+}
+
+.PageThreeText2 {
+    box-sizing: border-box;
+    flex: 1;
+}

@@ -1,0 +1,255 @@
+@font-face {
+    font-family: Airlash;
+    src: url(Airlash\ Raiders.ttf);
+}
+
+@font-face {
+    font-family: Golden;
+    src: url(Hunters\ K-Pop.otf);
+}
+
+@font-face {
+    font-family: CreatoMedium;
+    src: url(CreatoDisplay-Medium.otf);
+}
+
+@font-face {
+    font-family: CreatoMediumItalic;
+    src: url(CreatoDisplay-MediumItalic.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: CreatoMedium;
+}
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(https://starquality.shop/cdn/shop/files/av0ar8_2.gif?v=1677164784);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+}
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-right: 60px;
+    li {
+        display: inline-block;
+    }
+    li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    transition: 1s ease;
+    font-family: CreatoMediumItalic;
+    }
+}
+
+.HomeQ a:hover {
+    background-image: linear-gradient(#c09adb, #ffffff);
+    color: #431579;
+    border-radius: 10px;
+}
+.FFQ a:hover {
+    background-image: linear-gradient(#a17bb9, #ffffff);
+    color: #8132c2;
+    border-radius: 10px;
+}
+
+.AboutQ a:hover {
+    background-image: linear-gradient(#825b97, #ffffff);
+    color: #7d2dc7;
+    border-radius: 10px;
+}
+
+.MissionQ a:hover {
+    background-image: linear-gradient(#623c74, #ffffff);
+    color: #431579;
+    border-radius: 10px;
+}
+
+.QuarterQ a:hover {
+    background-image: linear-gradient(#431c52, #fff);
+    color: #431579;
+    border-radius: 10px;
+}
+
+.logo img {
+    float: left;
+    width: 150px;
+    height: auto;
+}
+
+.main {
+    padding-top: 10px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h1 {
+        color: #fff;
+        font-size: 60px;
+        transform: translateY(20px);
+        font-family: Golden;
+        letter-spacing: 10px;
+    }
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: Century;
+    font-size: 30px;
+    font-variant: small-caps;
+}
+
+.btn {
+    border: 1px solid #fff;
+    padding: 5px 20px;
+    color: #fff;
+    transition: 0.6s ease;
+    font-size: 18px;
+    text-decoration: none;
+    :hover {
+    background-color: #fff;
+    color: #000;
+    }
+}
+
+.Divider {
+    line-height: 2px;
+    background-color: #520b85;
+}
+
+.PageOne {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(https://img2.wallspic.com/crops/8/8/4/3/4/143488/143488-city-landmark-cityscape-sky-skyscrapercity-4096x2400.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 1vh;
+    overflow-x: hidden;
+}
+
+.glow-title {
+    color: #fff;
+    animation: glowPulse 2.5s ease-in-out infinite;
+    text-shadow: 0 0 10px #a36bff,
+                 0 0 20px #a36bff,
+                 0 0 35px #a36bff;
+}
+
+
+.glow-tagline {
+    animation: glowPulseSoft 3s ease-in-out infinite;
+    text-shadow: 0 0 8px #d7b3ff,
+                 0 0 14px #b57dff;
+}
+
+
+@keyframes glowPulse {
+    0% {
+        text-shadow: 0 0 10px #a36bff,
+                     0 0 20px #a36bff,
+                     0 0 35px #a36bff;
+    }
+    50% {
+        text-shadow: 0 0 20px #d9b3ff,
+                     0 0 40px #c88dff,
+                     0 0 70px #b46dff;
+    }
+    100% {
+        text-shadow: 0 0 10px #a36bff,
+                     0 0 20px #a36bff,
+                     0 0 35px #a36bff;
+    }
+}
+
+@keyframes glowPulseSoft {
+    0% {
+        text-shadow: 0 0 5px #b57dff;
+    }
+    50% {
+        text-shadow: 0 0 15px #e5d0ff;
+    }
+    100% {
+        text-shadow: 0 0 5px #b57dff;
+    }
+}
+
+
+.Container1 {
+    height: 520px;
+    width: 350px;
+    padding: 30px 50px;
+    border-radius: 50px;
+    background-color: #ffffff0a;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255,255,255, 0.4);
+    border-left: 1px solid rgba(255,255,255, 0.3);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.089);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-family: CreatoMedium;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 185%;
+    color: #fff;
+
+    transform: translateX(-100vh);
+    h1 {
+        padding-bottom: 30px;
+    }
+}
+
+.Container2 {
+    height: 520px;
+    width: 350px;
+    padding: 30px 50px;
+    border-radius: 50px;
+    background-color: #ffffff0a;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255,255,255, 0.4);
+    border-left: 1px solid rgba(255,255,255, 0.3);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.089);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-family: CreatoMedium;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 185%;
+    color: #fff;
+
+    transform: translateX(100vh);
+    h1 {
+        padding-bottom: 30px;
+    }
+}
+
+.show1 {
+    opacity: 1;
+}

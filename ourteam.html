@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TriNova</title>
+	<link rel="stylesheet" type="text/css" href="ourteam.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+</head>
+<body>
+	<header>
+		<div class="main">
+		<div class="logo">
+			<img src="images/logago.png" style="width: 100px;">
+		</div>
+		
+		 <ul>
+         <li class="HomeQ"><a href="index.html">Home</a></li>
+		 <li class="FFQ"><a href="trinova.html">TriNova</a></li>
+		 <li class="AboutQ"><a href="aboutus.html">About Us</a></li>
+		 <li class="MissionQ"><a href="research.html">Research</a></li>
+         <li class="QuarterQ"><a href="ourteam.html">Our Team</a></li>
+		</ul>
+		</div>
+	</header>
+
+	<p class="Divider">.</p>
+    <section class="PageOne" id="PageOne">
+
+<div class="organ">
+	<img src="images/organchart.png" class="glow-image fade-slide" alt="Organization Chart">	
+    <div class="organ-text fade-slide">
+	<p>This is our organization chart, outlining the structure and roles 
+            within TriNova.<br><br>Members:<br>Victor Kyle De Fiesta<br>Khloe Beatrice Besa<br>Frances Martin Atanacio<br>Alessandra Nicole Pagaduan<br>Martijne Handrey Rivera</p>
+
+        <a href="https://www.facebook.com/share/1G8AdGTCkd/" class="team-link">Learn More →</a>
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const animatedItems = document.querySelectorAll(".fade-slide");
+
+    animatedItems.forEach((item, index) => {
+        setTimeout(() => {
+            item.classList.add("show");
+        }, 300 + index * 300); 
+    });
+});
+</script>
+
+</body>
+</html>
