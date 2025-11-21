@@ -21,7 +21,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: CreatoMedium;
+    font-family: CreatoMediumItalic;
 }
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(https://starquality.shop/cdn/shop/files/av0ar8_2.gif?v=1677164784);
@@ -161,6 +161,8 @@ ul li a {
     color: #d5b3ff;
     font-weight: bold;
     transition: 0.3s;
+    margin-top: 40px;
+    display: inline-block;
 }
 
 .team-link:hover {

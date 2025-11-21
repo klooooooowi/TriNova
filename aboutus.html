@@ -46,7 +46,7 @@
 <p class="Divider">.</p>
 <section class="PageTwo">
 
-    <div class="stream-container">
+    <div class="stream-container scroll-animate">
 
         <div class="stream-box">
             <img src="images/startingsoon.gif" class="stream-image" alt="Starting Soon">
@@ -61,6 +61,35 @@
     </div>
 
 </section>
+
+<p class="Divider">.</p>
+<section class="PageThree">
+
+    <div class="outline-container scroll-animate">
+
+        <img src="images/streamoutline.png" class="outline-image" alt="Stream Outline">
+
+        <h2 class="outline-heading">Stream Outline</h2>
+
+    </div>
+
+</section>
+
+<script>
+const items = document.querySelectorAll('.scroll-animate');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+}, { threshold: 0.2 });
+
+items.forEach(item => {
+    observer.observe(item);
+});
+</script>
 
 </body>
 </html>

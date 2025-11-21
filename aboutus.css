@@ -18,6 +18,11 @@
     src: url(CreatoDisplay-MediumItalic.otf);
 }
 
+@font-face {
+    font-family: CreatoBlack;
+    src: url(CreatoDisplay-Black.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -129,7 +134,7 @@ ul li a {
 
 .promo-text h1 {
     font-size: 55px;
-    font-family: Golden;
+    font-family: CreatoMedium;
     margin-bottom: 20px;
 }
 
@@ -174,7 +179,7 @@ ul li a {
 }
 
 .promo-heading {
-    font-family: Golden;
+    font-family: CreatoMedium;
     font-size: 60px;
     color: white;
     letter-spacing: 3px;
@@ -216,7 +221,54 @@ ul li a {
 
 .stream-box h2 {
     margin-top: 15px;
-    font-family: Golden;
+    font-family: CreatoMedium;
     font-size: 50px;
     letter-spacing: 1px;
+}
+
+.PageThree {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)),
+                      url(https://4kwallpapers.com/images/wallpapers/dark-purple-3440x1440-17330.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 5vh;
+}
+
+.outline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInUp 1.2s ease forwards;
+    opacity: 0;
+}
+
+.outline-image {
+    width: 600px;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 20px #b07bff);
+    margin-bottom: 25px;
+}
+
+.outline-heading {
+    font-family: CreatoMedium;
+    font-size: 60px;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: 1.2s ease-out;
+}
+
+.scroll-animate.show {
+    opacity: 1;
+    transform: translateY(0);
 }

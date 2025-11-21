@@ -18,6 +18,11 @@
     src: url(CreatoDisplay-MediumItalic.otf);
 }
 
+@font-face {
+    font-family: CreatoBlack;
+    src: url(CreatoDisplay-Black.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -93,14 +98,15 @@ ul {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    h1 {
+}
+
+.title h1 {
         color: #fff;
         font-size: 60px;
         transform: translateY(20px);
-        font-family: Golden;
+        font-family: CreatoMedium;
         letter-spacing: 10px;
     }
-}
 
 .button {
     position: absolute;
@@ -108,9 +114,16 @@ ul {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-family: Century;
+    font-family: CreatoMediumItalic;
     font-size: 30px;
     font-variant: small-caps;
+    text-align: center;
+}
+
+.button p {
+    font-family: CreatoMediumItalic;
+    font-size: 30px;
+    text-align: center;
 }
 
 .btn {
